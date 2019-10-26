@@ -1,4 +1,4 @@
-# userテーブル
+## userテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -6,7 +6,7 @@
 
 ### Association
 - has_many :messages
-- has_many :groups.through: :group_user
+- has_many :groups.through: :groups_users
 - has_many :group_user
 
 
