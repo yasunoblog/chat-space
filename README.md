@@ -10,7 +10,6 @@
 - has_many :group_user
 
 
-
 ## groupテーブル
 Column|Type|Options|
 |------|----|-------|
@@ -20,7 +19,6 @@ Column|Type|Options|
 - has_many :users: through: :group_user
 - has_many :messages
 - has_many :group_user
-
 
 
 ## group_userテーブル
