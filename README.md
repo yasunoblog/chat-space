@@ -38,8 +38,8 @@ Column|Type|Options|
 ### messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|
-|image|string|null: false|
+|body|text||
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
