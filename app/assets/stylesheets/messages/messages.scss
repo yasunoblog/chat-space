@@ -1,0 +1,12 @@
+.wrapper {
+  display:flex;  
+  &:after {
+    content: "";
+    clear: both;
+    display: block;  
+  }    
+}
+a {   
+  color: inherit; 
+  text-decoration: none; 
+}  
