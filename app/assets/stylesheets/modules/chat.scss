@@ -1,26 +1,26 @@
-.chat{
+.chat {
   width: calc(100% - 300px);
-  .header{
+  .header {
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
-    .left-header{
+    .left-header {
       float: left;
-      &__title{
+      &__title {
         color: #333;
-        font-size:20px;
-        margin-top: 35px;    
+        font-size: 20px;
+        margin-top: 35px;
       }
       &__members {
-        color: #999;
-        display: 12px;
+        @include flexbox;
+        color: $light_gray;
         font-size: 12px;
         margin-top: 15px;
         .member {
-            display: inline-block;
-            padding-right: 5px;
-        }  
-      }    
+          display: inline-block;
+          padding-right: 5px;
+        }
+      }
     }
     .right-header {
       border: 1px solid $light_blue;
@@ -30,7 +30,11 @@
       line-height: 40px;
       margin-top: 28px;
       padding: 0 20px;
-    }    
+      &__button {
+        color: $light_blue;
+        text-decoration: none;
+      }
+    }
   }
 
   .messages {
@@ -42,24 +46,24 @@
       .upper-message {
         display: flex;
         &__user-name {
-        color: #434a54;
-        font-size: 16px;
-        font-weight: bold;    
+          color: $black;
+          font-size: 16px;
+          font-weight: bold;
         }
         &__date {
-          color: #999;
+          color: $light_gray;
           font-size: 12px;
-          padding-left: 10px;    
+          padding-left: 10px;
         }
-      } 
+      }
       .lower-message {
         margin-top: 10px;
         &__content {
-          color: #999;
+          color: $black;
           font-size: 14px;
-          margin-bottom: 40px;    
+          margin-bottom: 40px;
         }
-      }   
+      }
     }
   }
 
@@ -69,10 +73,10 @@
     height: 90px;
     padding: 20px 50px 20px 40px;
     &__message {
-        border: none;
-        float: left;
-        height: 50px;
-        width: calc(100% - 150px);
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
     }
     &__mask {
       background-color: $white;
@@ -81,11 +85,11 @@
       padding-right: 10px;
       &__image {
         font-size: 20px;
-        line-height: 50px;    
+        line-height: 50px;
       }
       .hidden {
-        display: none;    
-      }    
+        display: none;
+      }
     }
     &__submit {
       background-color: $light_blue;
@@ -96,6 +100,6 @@
       height: 50px;
       margin-left: 15px;
       padding: 0 30px;
-    }    
+    }
   }
 }
