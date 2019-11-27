@@ -22,6 +22,7 @@ $(function(){
     }
 
     $('#new_message').on('submit', function(e){
+        console.log(2)
         e.preventDefault(); //実行したメソッドがキャンセルできる場合、キャンセルするメソッド
         var formData = new FormData(this);
         var url = $(this).attr('action')  //attrはHTML要素のactionを取得し設定している
