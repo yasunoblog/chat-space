@@ -45,8 +45,10 @@
     background-color: #FAFAFA;
     box-sizing: border-box;
     padding: 46px 40px 0;
-    height: calc(100% - 100px - 90px);
+    height: calc(100vh - 100px - 90px);
+    overflow: scroll;
     .message {
+      padding-bottom: 40px;
       .upper-message {
         display: flex;
         &__user-name {
@@ -90,11 +92,19 @@
       &__image {
         font-size: 20px;
         line-height: 50px;
-      }
+        cursor: pointer;
+        form{
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+        }
       .hidden {
         display: none;
       }
     }
+  }
     &__submit {
       background-color: $light_blue;
       border: none;
