@@ -71,6 +71,5 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'pry-rails'
 gem 'font-awesome-sass'
-# gem 'jquery-rails'
 gem 'fog-aws'
 
